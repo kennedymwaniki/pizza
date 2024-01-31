@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import Apps from "./app";
 
 const skills = [
   {
@@ -47,6 +48,8 @@ function App() {
         for each web dev skill that you have,
         customized with props */}
         <SkillList />
+        <Apps />
+        {/* <FormComponent /> */}
       </div>
     </div>
   );
@@ -89,6 +92,7 @@ function Skill({ skill, color, level }) {
     </div>
   );
 }
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
